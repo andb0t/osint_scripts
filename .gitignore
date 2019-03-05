@@ -1,2 +1,5 @@
 # project
 secret*.json
+
+# pipenv
+Pipfile.lock
