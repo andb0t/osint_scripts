@@ -35,6 +35,6 @@ for target, target_name in zip(_target_emails, _target_names):
           ("From: {} <{}>\n".format(target_name, target)).encode() + \
           b"\r\n" + \
           _text.encode()
-
+    print('Sending this message:', msg)
     server.sendmail(_account, target, msg)
 server.quit()
